@@ -26,6 +26,7 @@
     terminal = false;
     categories = ["Network" "WebBrowser"];
     mimeTypes = ["text/html" "text/xml"];
+    keywords = ["firefox" "web" "browser" "internet"];
   };
 
   wrappedFox =
