@@ -15,8 +15,8 @@
   };
 
   desktopItem = makeDesktopItem {
-    name = "Schizofox";
-    desktopName = "Schizofox";
+    name = "Firefox";
+    desktopName = "Firefox";
     genericName = "Web Browser";
     exec =
       if cfg.security.wrapWithProxychains
@@ -112,7 +112,7 @@
         )
         + ''
           rm -rf $out/share/applications/*
-          install -D ${desktopItem}/share/applications/Schizofox.desktop $out/share/applications/Schizofox.desktop
+          install -D ${desktopItem}/share/applications/Firefox.desktop $out/share/applications/Firefox.desktop
           makeWrapper $out/bin/firefox $out/bin/schizofox
         '';
     });
